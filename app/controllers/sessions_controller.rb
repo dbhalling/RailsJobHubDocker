@@ -6,15 +6,6 @@ class SessionsController < ApplicationController
   
   def create
     session[:current_user_id] = @user.id
-
-  # @user = User.find_by_username(params[:session][:username])
-  # if @user && @user.authenticate(params[:session][:password])
-  #   session[:user_id] = @user.id
-  #   redirect_to '/forums'
-  # else
-  #   redirect_to new_session_path
-  #   flash[:alert] = "Oops.. Houston, we have a problem..."
-  # end 
   end
   
   def destroy
